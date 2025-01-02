@@ -1,0 +1,107 @@
+/* Styling for the text container */
+.text-container {
+    border: 2px solid #f0ad4e;
+    /* Border color (matching button color) */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 14px 10px rgba(234, 213, 213, 0.2);
+    /* Add a soft shadow */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth shadow transition */
+}
+
+/* Hover effect to intensify the shadow */
+.text-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+}
+
+/* Optional: Additional styling for text */
+.text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.text-container a {
+    text-decoration: none;
+    /* Removes underline from button */
+}
+
+
+/* Add this CSS to home.css */
+
+/* Animation for each letter */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.text-container h4 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20) 1s forwards;
+}
+
+/* Paragraph animation */
+.paragraph {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.paragraph.show {
+    opacity: 1;
+}
+
+
+/* Add this CSS to home.css */
+
+/* Circular Bounce Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the circular box shadow and bouncing effect to the image */
+.img-container {
+    display: inline-block;
+    /* animation: bounce 2s infinite; */
+    /* Makes the image bounce */
+    box-shadow: 0 0 0px rgba(167, 141, 141, 0.6), 0 0 50px rgba(255, 85, 85, 0.8), 0 0 100px rgba(85, 255, 85, 0.8);
+    border-radius: 50%;
+    /* Circular border */
+    /* transition: box-shadow 0.3s ease-in-out; */
+    /* Smooth transition for hover effect */
+}
+
+.img-container:hover {
+    box-shadow: 0 0 10px rgba(123, 99, 99, 0.8), 0 0 80px rgba(255, 85, 85, 1), 0 0 150px rgba(85, 255, 85, 1);
+}
+
+

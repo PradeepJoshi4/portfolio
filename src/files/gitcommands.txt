@@ -1,0 +1,28 @@
+* clone and status
+
+git clone <link>
+git status
+
+* add and commit 
+
+git add <file name for single>
+git add . (for all).
+
+* Push command 
+git push origin main.
+
+* git init
+git init (for initial a git in new repo)
+git remote add origin <link>
+git remote -v 
+git branch (to check bracnh)
+git branch -M main (to rename a branch)
+git push origin main
+
+
+* git branch commands 
+git branch (to check branch)
+git branch -M main (to rename branch)
+git checkout <branch name> (to navigate)
+git checkout -b <-new branch name> (to create new branch)
+git branch -d <branch name> (to delete branch)
