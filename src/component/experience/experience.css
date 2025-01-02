@@ -1,0 +1,73 @@
+
+ 
+  
+  /* Custom styles for the experience box */
+  .experience-box {
+    background: #A8DADC  ; /* Change to any desired color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(15, 15, 15, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s ease;
+  }
+  
+  /* Flip effect on hover */
+  .experience-box:hover {
+    transform: rotateY(15deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add sliding animation for experience boxes */
+  .animate-box-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInLeft 1s forwards;
+  }
+  
+  .animate-box-right {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideInRight 1s forwards;
+  }
+  
+  /* Animation keyframes */
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Staggered animation for each card */
+  .animate-box-left:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-box-right:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+
+  
+  .description {
+    color: #280b0b;
+  }
+  @media (max-width: 767px) {
+    .experience-box {
+      margin-bottom: 15px; /* Space between the cards */
+    }
+  }
+
+  .colorbyme{
+    color: black;
+    font-weight: bold;
+  }
+  .colorbymeforcname{
+    color: black;
+  }

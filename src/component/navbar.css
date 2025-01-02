@@ -1,90 +1,27 @@
-/* styles.css */
-.navbar-nav .nav-item .nav-link {
-    padding-bottom: 10px;
-    /* Optional: Add some space below text */
-    transition: all 0.3s ease;
+.colorwhitebyme {
+    color: white !important;
+    font-weight: bold;
+
 }
 
-/* Hover effect: add bottom border on hover */
-.navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid #ff6347;
-    /* You can choose the color you prefer (e.g., #ff6347 is a tomato red) */
+.colorwhitebyme:hover {
+    border-bottom: yellow 3px solid;
 }
 
-.nav-link {
-    color: white;
+.paddingbyme {
+    gap: 15px;
 }
 
-.nav-link:hover {
-    color: white;
+.navbarcolor {
+    color: white !important;
+    font-weight: bold;
 }
 
-/* Sidebar styles */
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -250px; /* Initially hidden */
-    width: 250px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: right 0.3s ease;
-    z-index: 999;
-}
-
-.sidebar.open {
-    right: 0; /* Slide in the sidebar */
-}
-
-.sidebar .navbar-nav {
-    margin-top: 50px; /* Space out links */
-}
-
-.sidebar .nav-item {
-    padding: 15px;
-}
-
-.sidebar .nav-link {
-    color: white;
-    font-size: 20px;
-}
-
-/* Close button styles */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 30px;
-    color: white;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.close-btn:hover {
-    color: #ccc; /* Change color on hover */
-}
-
-/* Optionally, to make the links in the sidebar appear more centered */
-.sidebar .navbar-nav .nav-item {
-    text-align: center;
-}
-
-/* Hide the regular navbar links when the sidebar is open */
-.collapse.navbar-collapse.d-none {
-    display: none !important;
-}
-
-@media (min-width: 768px) {
-    .sidebar {
-        display: none; /* Hide the sidebar on larger screens */
-    }
-    .navbar-collapse {
-        display: flex !important; /* Show the navbar links on larger screens */
-    }
-}
-
-.navbar-toggler-icon{
+.iconcolorbyme {
+    background-color: white !important;
     border-radius: 50%;
-    background-color: currentColor !important;
+}
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none; /* Remove any focus outline or shadow */
 }
