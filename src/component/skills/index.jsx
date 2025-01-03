@@ -4,7 +4,7 @@ import './index.css'; // Import the CSS file with the animations
 
 const Skills = () => {
     return (
-        <div className="container mt-5">
+        <div className="container mt-3">
             <h2 className="text-center mb-4" style={{ fontSize: "25px" }}>Skills</h2>
             <div className="row">
                 {/* For small screens, use col-6 for 2 skills per row */}
